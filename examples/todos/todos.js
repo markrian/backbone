@@ -167,7 +167,7 @@ TaskStatsView = Backbone.View.extend({
 		return this;
 		
 	},
-	clearCompleted : function(){
+	clearCompleted : function(event){
 		//simply pass the completed() array to the collection's remove method
 		this.collection.remove(this.collection.completed());
 		event.preventDefault();
